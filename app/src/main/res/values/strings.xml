@@ -1,0 +1,13 @@
+<resources>
+    <string name="appName">Student Scheduler</string>
+    <string name="activity_term">Terms</string>
+    <string name="activity_course">Courses</string>
+    <string name="activity_assessments">Assessments</string>
+    <string name="menu_action_edit">edit</string>
+    <string name="menu_action_delete">delete</string>
+    <string name="menu_action_save">save</string>
+    <string name="menu_action_notes">notes</string>
+    <string name="channel_name">notification channel</string>
+    <string name="menu_action_alarm">Set Alarm</string>
+    <string name="channel_description">notification channel description</string>
+</resources>

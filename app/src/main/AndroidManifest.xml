@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.reggiewashington.c196">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/appName"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermActivity"
+            android:label="@string/activity_term"
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CourseActivity"
+            android:label="@string/activity_course"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentsActivity"
+            android:label="@string/activity_assessments"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddTerm"
+            android:label="Add Term"
+            android:parentActivityName=".TermActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddCourse"
+            android:label="Add Course"
+            android:parentActivityName=".TermActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddAssessment"
+            android:label="Add Assessment"
+            android:parentActivityName=".AssessmentsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TermDetailActivity"
+            android:label="Term Detail"
+            android:parentActivityName=".TermActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EditTerm"
+            android:label="Edit Term"
+            android:parentActivityName=".TermDetailActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CourseDetailActivity"
+            android:label="Course Detail"
+            android:parentActivityName=".CourseActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentDetailActivity"
+            android:label="Assessment Detail"
+            android:parentActivityName=".AssessmentsActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EditCourse"
+            android:label="Edit Course"
+            android:parentActivityName=".CourseDetailActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EditAssessment"
+            android:label="Edit Assessment"
+            android:parentActivityName=".AssessmentDetailActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.reggiewashington.c196.MainActivity" />
+        </activity>
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>
